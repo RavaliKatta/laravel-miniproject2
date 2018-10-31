@@ -25,14 +25,20 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //return view('home');
-        $users = User::all();
-
-        dd($users->count());
-
-
-        return view('home', ['users' => $users]);
+        return view('home');
     }
 
+    public function profile()
+    {
+        //$user = User::find(2);
+        // $user->name = 'Steve Smith';
+        //$user->delete();
+        //$users = User::all();
+        $user=Auth::user();
+        $cars=$user->cars;
+        //dd($users->count());
 
+
+        return view('profile', ['cars' => $cars]);
+    }
 }
