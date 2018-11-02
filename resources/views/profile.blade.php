@@ -1,26 +1,26 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Profile</div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Profile</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                    <div class="card-body">
+                        @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
+                            </div>
+                        @endif
 
-                    You are in Profile Page
-                    @foreach ($cars as $car)
-                        <h1>{{$car->Make . 'Model:' . $car->Model}}</h1>
-
+                        This is your profile page
+                        @foreach ($cars as $car)
+                            <h1>{{$car->Make . 'Model:' . $car->Model}}</h1>
+                            @endforeach
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 @endsection
