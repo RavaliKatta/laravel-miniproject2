@@ -9,7 +9,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{route('about')}}">about</a>
             </li>
-
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('contact')}}">contact</a>
+            </li>
         </ul>
     </div>
 </nav>

@@ -35,10 +35,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('about') }}">{{ __('About') }}</a>
-                        </li>
+
                     </ul>
+
 
 
                     <!-- Right Side Of Navbar -->
@@ -66,6 +65,8 @@
                                         {{ __('Logout') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('profile') }}">Profile</a>
+                                    <a class="dropdown-item" href="{{ route('/about') }}">Profile</a>
+                                    <a class="dropdown-item" href="{{ route('/contact') }}">Contact</a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>

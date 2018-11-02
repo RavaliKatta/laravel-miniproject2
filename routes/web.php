@@ -23,3 +23,7 @@ Route::get('/profile', 'HomeController@profile')->name('profile');
 
 
 Route::get('/about', 'PagesController@about')->name('about');
+
+Route::get('/contact', 'PagesController@contact')->name('contact');
+
+Route::post('/contact', 'PagesController@store')->name('contact.store');
