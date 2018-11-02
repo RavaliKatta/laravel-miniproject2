@@ -15,9 +15,7 @@
                         @endif
 
                         This is your profile page
-                        @foreach ($cars as $car)
-                            <h1>{{$car->Make . 'Model:' . $car->Model}}</h1>
-                            @endforeach
+
                     </div>
                 </div>
             </div>

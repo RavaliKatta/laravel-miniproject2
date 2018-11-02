@@ -30,15 +30,6 @@ class HomeController extends Controller
 
     public function profile()
     {
-        //$user = User::find(2);
-        // $user->name = 'Steve Smith';
-        //$user->delete();
-        //$users = User::all();
-        $user=Auth::user();
-        $cars=$user->cars;
-        //dd($users->count());
-
-
-        return view('profile', ['cars' => $cars]);
+        return view('profile');
     }
 }
